@@ -8,7 +8,7 @@ such as https://dillinger.io
 ### Introduction
 
 This project uses python to show statistics of the debian packages (for a specific architecture) that have the most files associated with them.
-It uses the online data at http://ftp.uk.debian.org/debian/dists/stable/main/. to do so
+It uses the online data at http://ftp.uk.debian.org/debian/dists/stable/main/. to do so. 
 See _[challenge.txt](./challenge.txt)_ for furter details.
 
 ## Terminology
@@ -30,7 +30,7 @@ https://wiki.debian.org/RepositoryFormat#A.22Contents.22_indices
 ## Setup
     ex_auto/prj/script> ./venv_create.sh
     
-This will crete a virtual environment and install the required packages (as listed in **prj/pip_reqs.txt**)
+This will create a virtual environment and install the required packages (as listed in **prj/pip_reqs.txt**)
 
 - *Note*: on Ubuntu one may need to first separately **install python3-venv**
 
