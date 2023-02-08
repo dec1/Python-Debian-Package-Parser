@@ -1,4 +1,4 @@
-###### Debian Package Parser in Python
+# Python Debian Package Parser
 
 ##### Prolog
 This document is markdown format and best viewed using a markdown capable viewer, such as 
