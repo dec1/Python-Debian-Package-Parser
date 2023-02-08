@@ -6,7 +6,10 @@ _pycharm_ or _visual studio code_. Alternatively copy/paste into an online markd
 such as https://dillinger.io
 
 ### Introduction
-This project contains the implementation of the solution to the challenge in the file _challenge.txt_
+
+This project uses python to show statistics of the debian packages (for a specific architecture) that have the most files associated with them.
+It uses the online data at http://ftp.uk.debian.org/debian/dists/stable/main/. to do so
+See _[challenge.txt](./challenge.txt)_ for furter details.
 
 ## Terminology
 #### Listing File
