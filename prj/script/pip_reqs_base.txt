@@ -1,0 +1,29 @@
+# direct dependencies used by project
+#  for snapshot of all (recursive) dependencies in precise versions tested - see
+#    pip_reqs_export() -> "pip_reqs.txt"
+
+# http requests
+requests
+
+# html parser
+beautifulsoup4
+
+# display the progress of download
+tqdm
+
+# tabular display of results
+pandas
+tabulate
+
+
+
+# quality control
+pytest
+mypy
+pylint
+
+# type stubs (mypy helpers)
+types-requests
+types-beautifulsoup4
+types-tqdm
+pandas-stubs
