@@ -68,8 +68,9 @@ class ManFile:
     @classmethod
     def path_ensure_exists(cls, path: str):
         """ ensure that dir/file with 'path' exists, creating (parents recursively) if necessary """
-
+        print(f"start ... os.makedirs....{path}")
         os.makedirs(path, exist_ok=True)
+        print(f"finish ... os.makedirs....{path}")
 
     # ---------------------------------------------------------
     @classmethod

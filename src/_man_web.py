@@ -51,12 +51,20 @@ class ManWeb:
     def download(cls, url: str, dir_path: str, want_lazy_download=None) -> str:
         """ download from url to local dir_path """
 
+        if url.endswith('/'):
+            # Assume we want to save it as index.html in the specified directory
+            file_name = "index.html"
+        else:
+            # Otherwise, use the basename of the URL as the filename
+            file_name = os.path.basename(url)
+
         # save the output to this file
-        file_path = os.path.join(dir_path, os.path.basename(url))
+        file_path = os.path.join(dir_path, file_name)
 
         # eg  for url: http://ftp.uk.debian.org/debian/dists/stable/main/
         # save url pointing to director as "index.html" file
         is_dir = os.path.isdir(file_path)
+        print(f"is_dir = {is_dir}")
         if is_dir:
             file_path = os.path.join(file_path, "index.html")
 
@@ -66,8 +74,9 @@ class ManWeb:
                 print(f"already downloaded {url} ... reusing cached copy at {file_path}")
                 return file_path
 
-        print(f"downloading {url} ...")
-
+        print(f"downloading {url} ... to {dir_path}")
+        print(f"dir_path:  {dir_path}")
+        print(f"file_path:  {file_path}")
         # ensure local destination dir exists
         ManFile.path_ensure_exists(dir_path)
 
