@@ -3,25 +3,22 @@
 ##### Prolog
 This document is markdown format and best viewed using a markdown capable viewer, such as 
 _pycharm_ or _visual studio code_. Alternatively copy/paste into an online markdown viewer 
-such as https://dillinger.io
+such as [dillinger.io](https://dillinger.io)
 
 ### Introduction
 
 This project uses python to show statistics of the debian packages (for a specific architecture) that have the most files associated with them.
-It uses the online data at http://ftp.uk.debian.org/debian/dists/stable/main/. to do so.  
+It uses the online data from [debian](http://ftp.uk.debian.org/debian/dists/stable/main/.) to do so.  
 See _[challenge.txt](./challenge.txt)_ for furter details.
 
 ## Terminology
-#### Listing File
-http://ftp.uk.debian.org/debian/dists/stable/main/.  
+[Listing File](http://ftp.uk.debian.org/debian/dists/stable/main/.)  
 from here available contents files (see below) can be discerned
 
-#### Contents (index) File
-"Architecture" specific (one->many) mapping of file->packages
-eg  http://ftp.uk.debian.org/debian/dists/stable/main/Contents-[Arch].gz
+[Contents (index) File](http://ftp.uk.debian.org/debian/dists/stable/main/Contents-[Arch].gz) <br>
+ "Architecture" specific (one->many) mapping of file->packages
+eg [official documentation](https://wiki.debian.org/RepositoryFormat#A.22Contents.22_indices) 
 
-official documentation:  
-https://wiki.debian.org/RepositoryFormat#A.22Contents.22_indices
 
 ## Prerequisites
     Python 3.10+
