@@ -63,10 +63,6 @@ class ManWeb:
 
         # eg  for url: http://ftp.uk.debian.org/debian/dists/stable/main/
         # save url pointing to director as "index.html" file
-        is_dir = os.path.isdir(file_path)
-        print(f"is_dir = {is_dir}")
-        if is_dir:
-            file_path = os.path.join(file_path, "index.html")
 
         # could implement more complex caching strategy
         if want_lazy_download or cls._want_lazy_download():
@@ -74,9 +70,6 @@ class ManWeb:
                 print(f"already downloaded {url} ... reusing cached copy at {file_path}")
                 return file_path
 
-        print(f"downloading {url} ... to {dir_path}")
-        print(f"dir_path:  {dir_path}")
-        print(f"file_path:  {file_path}")
         # ensure local destination dir exists
         ManFile.path_ensure_exists(dir_path)
 
