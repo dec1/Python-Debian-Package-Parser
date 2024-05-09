@@ -2,6 +2,7 @@
 
 import shutil
 import os
+from typing import Optional
 from urllib.parse import urljoin
 import requests
 
@@ -33,7 +34,7 @@ class ManWeb:
 
     # ---------------------------------------------------------
     @classmethod
-    def full_path(cls, rel_path: str, base_path: str = None) -> str:
+    def full_path(cls, rel_path: str, base_path: Optional[str] = None) -> str:
         """ the full path of rel_path relative to urlbase() """
 
         if base_path is None:

@@ -1,6 +1,7 @@
 """ see ManFile below """
 
 import os
+from typing import Optional
 
 
 class ManFile:
@@ -39,7 +40,7 @@ class ManFile:
 
     # ---------------------------------------------------------
     @classmethod
-    def full_path(cls, rel_path: str, root_path: str = None):
+    def full_path(cls, rel_path: str, root_path: Optional[str] = None):
         """ full path of 'rel_path' within 'root_path """
 
         if root_path is None:
