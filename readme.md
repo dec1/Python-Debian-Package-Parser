@@ -106,9 +106,8 @@ and I wanted to avoid requiring this of anyone else, wishing to run/test this pr
 
 Notes:
 ------
-Some of the wording was ambiguous in the document at:
-
- https://wiki.debian.org/DebianRepository/Format?action=show&redirect=RepositoryFormat#A.22Contents.22_indices
+Some of the wording was ambiguous in this 
+[contents file](https://wiki.debian.org/DebianRepository/Format?action=show&redirect=RepositoryFormat#A.22Contents.22_indices)
 
 In any cases of ambiguity a reasonable best guess was made. For example:
 
