@@ -93,10 +93,10 @@ and I wanted to avoid requiring this of anyone else, wishing to run/test this pr
     >  ./prj/script/venv/bin/mypy --check-untyped-defs -p test -p src
 
     Success: no issues found in 16 source files
-    Declans-iMac:ex_auto declan$ ./prj/script/venv/bin/pylint src test
+
 
 ## Check Lint
-    > ./prj/script/venv/bin/pylint src test
+    > ./prj/script/venv/bin/python -m pylint src test
 
     --------------------------------------------------------------------
     Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
