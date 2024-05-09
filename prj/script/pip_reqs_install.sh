@@ -16,4 +16,4 @@
 # previous call to 'pip_reqs_export.sh'
 #
 # recommended for production
-./venv/bin/pip install -r pip_reqs_base.txt
+./venv/bin/pip install -r pip_reqs.txt
