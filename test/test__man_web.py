@@ -21,7 +21,7 @@ def test_download_cts(tmpdir):
     remote_file = "Contents-udeb-all.gz"
 
     # manually calculated md5
-    md5_expect = "708ed31f29f9daf4c980b7abdd66c356"
+    md5_expect = "2e594cf44c92174522c956a0403bbed7"
 
     url = ManWeb.full_path(rel_path=remote_file)
     file_path = ManWeb.download(url, tmpdir)
@@ -37,7 +37,7 @@ def test_download_listing(tmpdir):
     remote_file = ""
 
     # manually calculated md5
-    md5_expect = "e08ba6e440971b60b54462767fca0cc9"
+    md5_expect = "1c81137d6bf0ad1fbd143bb037542246"
 
     # expect page to contain this text
     substr_expected = "Index of /debian/dists/stable/main"

@@ -21,11 +21,11 @@ eg [official documentation](https://wiki.debian.org/RepositoryFormat#A.22Content
 
 
 ## Prerequisites
-    Python 3.10+
+    Python 3.12+
     If you have multiple versions of python installed, please make sure the correct one is being referenced in the files in _prj/script_ 
 
 ## Setup
-    ex_auto/prj/script> ./venv_create.sh
+    prj/script> ./venv_create.sh
     
 This will create a virtual environment and install the required packages (as listed in **prj/pip_reqs.txt**)
 
@@ -45,7 +45,7 @@ and I wanted to avoid requiring this of anyone else, wishing to run/test this pr
      
 
 ## Execute
-    ex_auto>  ./prj/script/venv/bin/python -m src.main udeb-all
+    >  ./prj/script/venv/bin/python -m src.main udeb-all
 
     collating for 'Contents-udeb-all.gz' .... 
     downloading http://ftp.uk.debian.org/debian/dists/stable/main/ ...
@@ -90,13 +90,13 @@ and I wanted to avoid requiring this of anyone else, wishing to run/test this pr
 
 
 ## Check Typing
-    ex_auto>  ./prj/script/venv/bin/mypy --check-untyped-defs -p test -p src
+    >  ./prj/script/venv/bin/mypy --check-untyped-defs -p test -p src
 
     Success: no issues found in 16 source files
     Declans-iMac:ex_auto declan$ ./prj/script/venv/bin/pylint src test
 
 ## Check Lint
-    ex_auto> ./prj/script/venv/bin/pylint src test
+    > ./prj/script/venv/bin/pylint src test
 
     --------------------------------------------------------------------
     Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
