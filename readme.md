@@ -76,7 +76,6 @@ and I wanted to avoid requiring this of anyone else, wishing to run/test this pr
 
     ========================================================================= test session starts ==========================================================================
     platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
-    rootdir: /Users/declan/Documents/zone/high/dev/eigene/canonical/ex_auto
     collected 15 items                                                                                                                                                     
     
     test/test__cts_arch.py .                                                                                                                                         [  6%]
