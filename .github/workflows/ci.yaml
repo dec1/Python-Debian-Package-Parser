@@ -21,16 +21,11 @@ jobs:
       with:
         python-version: '3.12'
 
-    - name: Set up dependencies
+    - name: Set up dependencies using venv_create.sh
       run: |
         cd prj/script
         ./venv_create.sh
         cd ../..
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pytest mypy pylint
 
     - name: Run tests with pytest
       run: ./prj/script/venv/bin/pytest test/
