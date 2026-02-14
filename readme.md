@@ -1,5 +1,7 @@
 # Python Debian Package Parser
 
+[![CI](https://github.com/dec1/Python-Debian-Package-Parser/actions/workflows/ci/badge.svg)](https://github.com/dec1/Python-Debian-Package-Parser/actions/workflows/ci)
+
 ##### Prolog
 This document is markdown format and best viewed using a markdown capable viewer, such as 
 _pycharm_ or _visual studio code_. Alternatively copy/paste into an online markdown viewer 
