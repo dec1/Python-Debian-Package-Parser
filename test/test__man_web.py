@@ -23,7 +23,7 @@ def test_download_cts(tmpdir):
     try:
         with gzip.open(file_path, 'rb') as f:
             f.read(1)
-    except Exception as e:
+    except (OSError, gzip.BadGzipFile) as e:
         assert False, f"Downloaded file is not a valid GZIP: {e}"
 
 

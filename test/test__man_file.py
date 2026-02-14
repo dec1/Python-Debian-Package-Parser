@@ -19,7 +19,8 @@ def test_full_path():
     assert ManFile.full_path(rel_path="f", root_path=p("/b/c")) == os.path.normpath(p("/b/c/f"))
 
     # FIX: Wrap "f1/f2" in p() so it becomes "f1\f2" on Windows before joining
-    assert ManFile.full_path(rel_path=p("f1/f2"), root_path=p("/b/c")) == os.path.normpath(p("/b/c/f1/f2"))
+    assert (ManFile.full_path(rel_path=p("f1/f2"), root_path=p("/b/c"))
+            == os.path.normpath(p("/b/c/f1/f2")))
 
 
 # ---------------------------------------------------------
