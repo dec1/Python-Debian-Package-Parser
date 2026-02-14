@@ -2,7 +2,6 @@
 
 import gzip
 from src._man_web import ManWeb
-from src._man_util import ManUtil
 
 
 # ---------------------------------------------------------
